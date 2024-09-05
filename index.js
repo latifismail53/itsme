@@ -16,6 +16,9 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
   res.redirect('https://github.com/itsme');
 });
+app.get('/shop', (req, res) => {
+  res.redirect('https://s.shopee.co.id/7AKWv7vLoT');
+});
 
 app.get('/api', (req, res) => {
   res.json({"msg": "Hello world"});

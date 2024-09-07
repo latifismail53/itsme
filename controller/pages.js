@@ -10,7 +10,7 @@ module.exports = {
       if (linkData) {
         res.render("index", { link: linkData.link });
       } else {
-        res.status(404).send("Ahhh! Link not found");
+        res.redirect("/");
       }
     } catch (error) {
       console.error("Error fetching link:", error);
